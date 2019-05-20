@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+
+.container{
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/**** Header Section Design ****/
+
+header{
+    padding: 31px 0;
+}
+.logo{
+    width: 20%;
+    float: left;
+}
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: #28377e;
+}
+nav{
+    width: 80%;
+    float: left;
+}
+nav ul{
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #204f87;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    padding: 10px 15px;
+}
+nav ul li a:hover{}
+
+/************************************/
+
+
+
+
+/**** Banner Section Design ****/
+
+.banner-section{
+    position: relative;
+    background-image: url('../images/main_banner.png');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.overlayer{
+	width: 50%;
+}
+.overlayer img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-0%,-0%);
+	max-width: 49.50%;
+	height: 100%;
+}
+.banner-content{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 785px;
+}
+.banner-content h1{text-align: center;color: white;font-size: 82px;text-transform: uppercase;}
+.angle-down{
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
+	transform: translate(-50%,0);
+	color: white;
+	font-size: 36px;
+}
+
+/************************************/
+
+
+
+/**** About Us Section Design ****/
+
+.about-us{padding: 100px 0px;}
+.aboutus-content{
+	width: 60%;
+	float: left;
+	padding: 15px 0;
+}
+.aboutus-content hr{width: 60px;border: 3px solid red;}
+.aboutus-content h1{
+    color: #204f87;
+    margin: 25px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.aboutus-content p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 150px;
+    color: #b0b0b1;
+    text-align: justify;
+    line-height: 1.6;
+}
+.aboutus-background{
+	width: 40%;
+	float: left;
+}
+.aboutus-background img{}
+
+/************************************/
+
+
+/**** Work Section Design ****/
+
+.work-section{
+    margin-top: 100px;
+}
+.work-section hr{
+    width: 60px;
+    border: 3px solid red;
+    margin: 0 auto;
+}
+.work-section h1{
+    color: #204f87;
+    margin: 25px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.work-content{
+    background-image: url('../images/port.png');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width: 100%;
+    background-size: contain;
+}
+.work-portfolio{
+    width: 33.33%;
+    float: left;
+    padding: 45px 15px;
+}
+.work-photo{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.work-photo img{
+	width: 100%;
+}
+.work-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #28377e;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.work-photo:hover .work-layer{
+	opacity: 0.7;
+}
+.arrow{
+	position: absolute;
+	color: white;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	opacity: 0;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	font-size: 40px;
+}
+.work-photo:hover .arrow{
+	opacity: 1;
+	bottom: 50px;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.work-photo h1{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-size: 28px;
+	color: white;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: all 0.7s ease;
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+}
+.work-photo:hover h1{
+	opacity: 1;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-40%);
+}
+
+/************************************/
+
+
+
+/**** Portfolio Section Design ****/
+
+.portfolio-section{
+    background-image: url('../images/portfolio-bg.png');
+    /* height: 180vh; */
+    width: 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 120px;
+    z-index: -1;
+    padding-bottom: 120px;
+}
+.portfolio-content{
+    width: 30%;
+    float: left;
+    margin-top: 100px;
+}
+.portfolio-content hr{
+    width: 60px;
+    border: 3px solid red;
+}
+.portfolio-content h1{
+	color: #fff;
+    margin: 25px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.portfolio-content p{
+	font-size: 14px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #b0b0b1;
+	text-align: justify;
+	line-height: 1.6;
+	margin-right: 35px;
+}
+.portfolio-content h2{
+	color: #f2622c;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.portfolio-attorneys{
+    width: 70%;
+    float: left;
+}
+.attorneys{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.attorneys-layer{
+	position: relative;
+	width: 100%;
+}
+.layer-color{
+	position: absolute;
+	background-color: #28377e;
+	width: 100%;
+	height: 25%;
+	bottom: -115px;
+	left: 0;
+	transform: translate(0,0);
+	opacity: 0;
+	transition: all 0.7s ease;
+}
+.attorneys-layer:hover .layer-color{
+	opacity: 0.8;
+	bottom: 0;
+	left: 0;
+	transform: translate(0,0);
+}
+.attorneys-layer h1{
+	position: absolute;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	bottom: 5%;
+	left: 0;
+	transform: translate(0,-5%);
+	opacity: 0;
+	transition: all 0.6s ease;
+}
+.attorneys-layer:hover h1{
+	opacity: 1;
+	bottom: 5%;
+	left: 35%;
+	transform: translate(-35%,-5%);
+}
+
+/************************************/
+
+
+
+/**** Languages Section Design ****/
+
+.language-section{
+	margin-top: 100px;
+}
+.language-section hr{
+	width: 60px;
+    border: 3px solid red;
+    margin: 0 auto;
+}
+.language-section h1{
+	color: #204f87;
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.language-content{
+	width: 25%;
+	float: left;
+	padding: 20px 14px;
+}
+.language{
+}
+.language h2{
+	font-size: 24px;
+	color: #28367e;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+.language p{
+	color: #b0b0b1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+}
+.language h3{
+	color: #ab360a;
+	font-size: 18px;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/************************************/
+
+
+
+/**** Contact Us Section Design ****/
+
+.contact-section{
+	margin-top: 100px;
+	background-color: #28377e;
+	text-align: center;
+	padding: 50px 0;
+}
+.contact-section hr{
+    width: 60px;
+    border: 3px solid red;
+    margin: 0 auto;
+}
+.contact-section h1{
+    color: #fff;
+    margin: 30px 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+form{
+    width: 40%;
+    margin: 0 auto;
+}
+form input{
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-bottom: 2px solid white;
+    background-color: #ececec00;
+    font-size: 14px;
+}
+::placeholder{
+	color: white;
+}
+button{
+    margin: 50px 0;
+    padding: 10px 90px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #f2622c;
+    border: 1px solid #f2622c;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+button:hover{
+	background-color: #ca3700f2;
+}
+
+/************************************/
+
+
+/**** Footer Section Design ****/
+
+.footer-section{
+	background-color: #0c1234;
+	padding: 40px 0;
+}
+.copyright-content{
+	width: 50%;
+	float: left;
+}
+.copyright-content p{
+	color: #616ca8;
+}
+.social-link{
+	width: 50%;
+	float: left;
+}
+.social-link ul{
+    text-align: right;
+}
+.social-link ul li{
+    list-style: none;
+    display: inline-block;
+}
+.social-link ul li a{
+    color: #616ca8;
+    padding: 15px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.social-link ul li a:hover{
+    color: white;
+}
+
+/************************************/
